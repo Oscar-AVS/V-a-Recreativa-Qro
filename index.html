@@ -1,0 +1,94 @@
+<!-- Oscar Alexander Vilchis Soto Desarrollo Web para Servicio Social 2025 Vía Recreativa Querétaro -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Vía Recreativa Querétaro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Menú principal -->
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="LOGOS/logo-vrq.png" alt="Logo">
+      <span>Vía Recreativa Qro</span>
+    </a>
+
+    <button class="nav-toggle"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="descubre.html">Descubre</a>
+    <a href="galería.html" class="active">Galería</a>
+    <a href="actividades.html"> Actividades</a>
+    </nav>
+  </header>
+
+  <!-- Hero principal con Parallax -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="--hero-img:url('Imagen (1).PNG')" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>VÍA RECREATIVA<br>QUERÉTARO</h1>
+      <p>Domingos 8:00–12:00 h · Circuito Cerro de las Campanas</p>
+      <a href="descubre.html" class="btn btn-primary">Conoce más</a>
+    </div>
+  </section>
+
+  <!-- Sección informativa -->
+  <section class="section section-cream">
+    <div class="container">
+      <h2>¡Vive las calles de tu ciudad sin autos!</h2>
+      <p>
+        La <strong>Vía Recreativa Querétaro</strong> transforma cada domingo en un espacio libre,
+        seguro y lleno de vida. Familias, ciclistas, corredores y mascotas comparten la calle
+        en un ambiente de bienestar y comunidad. 
+      </p>
+    </div>
+  </section>
+
+  <!-- Carrusel -->
+  <section class="section section-cream">
+    <div class="container">
+      <h2>Vive tu ciudad</h2>
+
+      <div class="carousel" data-autoplay="true" data-interval="4000" aria-label="Carrusel inicio">
+        <div class="carousel-track">
+          <div class="slide"><img src="IMG/img (52).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (62).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (26).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (58).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (50).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (47).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (60).JPG" alt="Foto"></div>
+
+        </div>
+        <button class="carousel-prev" aria-label="Anterior">‹</button>
+        <button class="carousel-next" aria-label="Siguiente">›</button>
+        <div class="carousel-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Vía Recreativa Querétaro</h3>
+        <p>Domingos 8:00–12:00 h · Cerro de las Campanas</p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/viarecreativaqro/" target="_blank">Instagram Vía Recreativa</a>
+        <a href="https://www.facebook.com/profile.php?id=61569045212847" target="_blank">Facebook Vía Recreativa</a>
+        <a href="https://www.tiktok.com/@via_recreativa_queretaro?is_from_webapp=1&sender_device=pc" target="_blank">TikTok Vía Recreativa</a>
+      </div>
+    </div>
+    <div class="legal">© 2025 Vía Recreativa Qro</div>
+  </footer>
+
+</body>
+</html>
