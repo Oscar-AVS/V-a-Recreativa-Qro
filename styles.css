@@ -701,3 +701,23 @@ img{max-width:100%;display:block}
   .mosaic img{ height: 200px; }
 }
 
+/* === FIX VISUAL MENÚ HAMBURGUESA === */
+@media (max-width: 820px){
+
+  .nav-toggle{
+    background:#fff;              /* fondo visible */
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+  }
+
+  .nav-toggle span{
+    background:#111;              /* líneas oscuras */
+    height:3px;
+    width:22px;
+    margin:5px auto;
+  }
+
+}
+
+
+
