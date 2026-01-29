@@ -1,4 +1,7 @@
+/*Oscar Alexander Vilchis Soto Desarrollo Web para Servicio Social 2025 Vía Recreativa Querétaro */
+
 /* === VARIABLES === */
+/* Colores y valores que se reutilizan en todo el sitio  */
 :root{
   --mustard:#F3CD7A;
   --blue:#3E4FBA;
@@ -10,55 +13,96 @@
 
 /* === BASE === */
 *{box-sizing:border-box;margin:0;padding:0}
+
 body{
+  /* Tipografía principal del sitio */
   font-family:'Poppins', sans-serif;
   color:var(--text);
   line-height:1.6;
+
+  /* Fondo base */
   background:#fff;
+
+  /* Evita scroll horizontal por elementos muy anchos */
   overflow-x:hidden;
 }
+
+/* Links e imágenes con estilos generales */
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 
-/* === NAV === */
+/* === NAVEGACIÓN === */
+/* Barra superior fija  */
 .nav{
-  position:sticky;top:0;z-index:50;
-  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
   background:var(--mustard);
   padding:10px 4vw;
   box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
-.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+
+/* Logo y nombre */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700
+}
 .brand img{height:40px;width:auto}
-.nav-links{display:flex;gap:1rem;align-items:center}
+
+/* Links del menú */
+.nav-links{
+  display:flex;
+  gap:1rem;
+  align-items:center
+}
+
+/* Estilo de cada botón/link */
 .nav-links a{
-  padding:.6rem .8rem;border-radius:12px;font-weight:600;
+  padding:.6rem .8rem;
+  border-radius:12px;
+  font-weight:600;
 }
 .nav-links a:hover{background:rgba(255,255,255,.4)}
 
-/* === HERO (Full + Parallax) === */
+
+/* === HERO/ banner  === */
+/* Sección principal de inicio con imagen de fondo */
 .hero{
   position:relative;
   width:100%;
   min-height:clamp(68vh,88vh,100vh);
+
   display:grid;
   place-items:center;
+
   text-align:center;
   color:#fff;
-  overflow:hidden;
+  overflow:hidden; 
 }
 
+/* Fondo del hero  */
 .hero-bg{
   position:absolute;
   inset:0;
+
   background-image:var(--hero-img);
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center 70%;
+
+  /* Ayuda al rendimiento cuando se usa transform  */
   will-change:transform;
   transform:translateY(0) scale(1);
 }
 
+/* Capa oscura para que el texto se lea bien encima de la foto */
 .hero-overlay{
   position:absolute;
   inset:0;
@@ -68,6 +112,7 @@ img{max-width:100%;display:block}
     rgba(0,0,0,.35) 100%);
 }
 
+/* Contenido visible del hero (texto y botón) */
 .hero-content{
   position:relative;
   z-index:2;
@@ -86,6 +131,7 @@ img{max-width:100%;display:block}
   font-weight:600;
 }
 
+/* Botones generales */
 .btn{
   display:inline-block;
   padding:.9rem 1.4rem;
@@ -95,73 +141,141 @@ img{max-width:100%;display:block}
   font-weight:700;
 }
 
+/* Ajustes del hero en pantallas pequeñas */
 @media (max-width:768px){
   .hero{min-height:80vh}
   .hero-bg{background-position:center 62%}
 }
 
+
 /* === SECTION === */
+/* Estilo base de secciones y contenedor */
 .section{padding:72px 0}
 .section-cream{background:var(--cream)}
 .container{width:min(1100px,92%);margin-inline:auto}
 
+
 /* === Carrusel === */
+/* Carrusel grande  */
 .carousel{
   position:relative;
   border-radius:20px;
   overflow:hidden;
   box-shadow:var(--shadow);
 }
-.carousel-track{display:flex;transition:transform .5s ease}
-.slide{min-width:100%;aspect-ratio:16/9}
-.slide img{width:100%;height:100%;object-fit:cover}
-.carousel-prev,.carousel-next{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:42px;height:42px;
-  border:none;border-radius:999px;
+
+/* Track: aquí se mueven las slides con translateX  */
+.carousel-track{
+  display:flex;
+  transition:transform .5s ease
+}
+
+/* Cada slide ocupa el 100% del ancho del carrusel */
+.slide{
+  min-width:100%;
+  aspect-ratio:16/9
+}
+
+/* Imagen siempre llena el slide sin deformarse */
+.slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+/* Botones prev/next */
+.carousel-prev,
+.carousel-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:999px;
   background:rgba(255,255,255,.85);
-  cursor:pointer;font-size:18px;font-weight:800;
+
+  cursor:pointer;
+  font-size:18px;
+  font-weight:800;
 }
 .carousel-prev{left:12px}
 .carousel-next{right:12px}
+
+/* Puntitos del carrusel (dots) */
 .carousel-dots{
-  position:absolute;left:50%;bottom:10px;transform:translateX(-50%);
-  display:flex;gap:8px;padding:6px 10px;
-  background:rgba(0,0,0,.25);border-radius:16px;
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  transform:translateX(-50%);
+
+  display:flex;
+  gap:8px;
+  padding:6px 10px;
+
+  background:rgba(0,0,0,.25);
+  border-radius:16px;
 }
 .carousel-dots button{
-  width:9px;height:9px;border-radius:50%;
-  border:0;cursor:pointer;background:rgba(255,255,255,.6);
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  border:0;
+  cursor:pointer;
+  background:rgba(255,255,255,.6);
 }
 .carousel-dots button.active{background:#fff}
 
+
 /* === FOOTER === */
+/* Pie de página con redes y créditos */
 .footer{
-  background:#111;color:#eee;
-  padding:48px 0 12px;text-align:center;
+  background:#111;
+  color:#eee;
+  padding:48px 0 12px;
+  text-align:center;
 }
-.footer-grid{display:flex;flex-direction:column;gap:12px;align-items:center}
+
+.footer-grid{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center
+}
+
 .social a{margin:0 10px;color:#f0f0f0}
 .legal{margin-top:14px;font-size:.9rem;opacity:.7}
 
- .two-column{
+
+/* === LAYOUT 2 COLUMNAS (Acerca / Descubre) === */
+/* Plantilla general: texto a la izquierda, contenido visual a la derecha */
+.two-column{
   display:grid;
   grid-template-columns: 1.2fr 1fr;
   gap:2rem;
   align-items:center;
 }
 
-.text-col p{margin-bottom:1rem;text-align:justify}
+/* Texto justificado con espacio entre párrafos */
+.text-col p{
+  margin-bottom:1rem;
+  text-align:justify
+}
+
 
 /* === MINI CARRUSEL === */
+/* Carrusel pequeño  */
 .mini-carousel{
   position:relative;
   overflow:hidden;
   border-radius:20px;
   box-shadow:var(--shadow);
-  height:280px; 
+  height:280px;
 }
 
+/* Track del mini carrusel ) */
 .mini-track{
   display:flex;
   width:100%;
@@ -169,11 +283,13 @@ img{max-width:100%;display:block}
   transition:transform .6s ease;
 }
 
+/* Cada slide ocupa el 100% del ancho */
 .mini-slide{
   min-width:100%;
   height:100%;
 }
 
+/* Imagen llena todo el slide */
 .mini-slide img{
   width:100%;
   height:100%;
@@ -181,49 +297,64 @@ img{max-width:100%;display:block}
   border-radius:20px;
 }
 
- @media (max-width: 900px){
+/* Responsive para secciones de 2 columnas */
+@media (max-width: 900px){
   .two-column{
     grid-template-columns: 1fr;
   }
-  .mini-carousel{height:220px;margin-top:1rem;}
+  .mini-carousel{
+    height:220px;
+    margin-top:1rem;
+  }
 }
- .map-layout{
+
+
+/* === SECCIÓN MAPA y CARRUSEL (Acerca) === */
+/* Layout especial donde el mapa ocupa más espacio que el carrusel */
+.map-layout{
   display:grid;
-  grid-template-columns: 1.4fr 1fr;  
+  grid-template-columns: 1.4fr 1fr;
   gap:2rem;
   align-items:stretch;
 }
 
- .map-wrapper{
+/* Caja del mapa con bordes redondeados */
+.map-wrapper{
   border-radius:20px;
   overflow:hidden;
   box-shadow:var(--shadow);
   min-height:280px;
 }
 
+/* iframe del mapa siempre llena el contenedor */
 .map-wrapper iframe{
   width:100%;
   height:100%;
   border:0;
 }
 
-
+/* Ajuste específico del mini carrusel dentro del map-layout */
 .map-layout .mini-carousel{
-    height:280px;
+  height:280px;
 }
 
- @media (max-width: 900px){
+/* Responsive para mapa */
+@media (max-width: 900px){
   .map-layout{
     grid-template-columns:1fr;
   }
   .map-wrapper{min-height:260px;}
   .map-layout .mini-carousel{height:220px;}
 }
-  /* ===== Sección de actividades ===== */
+
+
+/* ===== Sección de actividades ===== */
+/* Estilo tipo tabla: nombre | descripción | collage */
 .activities-head{
   display:grid;
   grid-template-columns: 1.1fr 2fr 1.4fr;
   gap:1rem;
+
   font-weight:700;
   margin-top:2rem;
   padding:.8rem 1rem;
@@ -231,17 +362,23 @@ img{max-width:100%;display:block}
   background:rgba(0,0,0,.04);
 }
 
-.activities-head span:nth-child(1){padding-left:.25rem;}
+.activities-head span:nth-child(1){
+  padding-left:.25rem;
+}
 
+/* Cada fila de actividad */
 .activity-row{
   margin-top:1.2rem;
   padding:1.2rem 1.1rem;
   border-radius:16px;
+
   background:#fff;
   box-shadow:0 8px 18px rgba(0,0,0,.06);
+
   display:grid;
   grid-template-columns: 1.1fr 2fr 1.4fr;
   gap:1rem;
+
   align-items:flex-start;
 }
 
@@ -260,7 +397,7 @@ img{max-width:100%;display:block}
   align-items:center;
 }
 
-/* Collage de 4 imágenes (2 x 2) */
+/* Collage 2x2 (4 imágenes) */
 .collage{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
@@ -274,10 +411,11 @@ img{max-width:100%;display:block}
   object-fit:cover;
   border-radius:10px;
 }
-/* Responsive */
+
+/* Responsive actividades: en móvil se apila en una sola columna */
 @media (max-width: 900px){
   .activities-head{
-    display:none;  
+    display:none;
   }
   .activity-row{
     grid-template-columns:1fr;
@@ -290,9 +428,16 @@ img{max-width:100%;display:block}
     margin-top:.5rem;
   }
 }
-/* ==== Sección de logos ===== */
-.muted{opacity:.8; margin-top:.3rem}
 
+
+/* ==== Sección de logos ===== */
+/* Texto secundario / aclaratorio */
+.muted{
+  opacity:.8;
+  margin-top:.3rem
+}
+
+/* Contenedor del carrusel de logos con botones a los lados */
 .logo-carousel{
   margin-top:1.2rem;
   display:grid;
@@ -301,16 +446,23 @@ img{max-width:100%;display:block}
   gap:.8rem;
 }
 
+/* Botones prev/next del carrusel de logos */
 .logo-btn{
-  width:44px; height:44px;
-  border:none; border-radius:999px;
+  width:44px;
+  height:44px;
+
+  border:none;
+  border-radius:999px;
+
   background:rgba(255,255,255,.9);
   box-shadow:0 6px 14px rgba(0,0,0,.10);
+
   cursor:pointer;
   font-size:22px;
   font-weight:800;
 }
 
+/* Ventana visible del carrusel (lo que se ve en pantalla) */
 .logo-viewport{
   overflow:hidden;
   border-radius:25px;
@@ -319,27 +471,33 @@ img{max-width:100%;display:block}
   padding:14px 10px;
 }
 
+/* Track que se mueve en el carrusel de logos */
 .logo-track{
   display:flex;
   gap:18px;
   align-items:center;
+
   will-change:transform;
   transform:translateX(0);
 }
 
+/* Caja individual de cada logo */
 .logo-item{
   flex:0 0 auto;
   width:170px;
   height:90px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border-radius:14px;
   background:rgba(255,255,255,.85);
   box-shadow:0 6px 14px rgba(0,0,0,.06);
   padding:10px;
 }
 
+/* Imagen del logo: se ajusta sin deformarse */
 .logo-item img{
   max-width:100%;
   max-height:100%;
@@ -347,12 +505,15 @@ img{max-width:100%;display:block}
   filter:saturate(1.05);
 }
 
-/* Responsive */
+/* Responsive logos */
 @media (max-width: 900px){
   .logo-carousel{grid-template-columns: 40px 1fr 40px}
   .logo-item{width:140px;height:80px}
 }
+
+
 /* ===== GALERÍA ===== */
+/* Hero pequeño arriba de la galería */
 .gallery-hero{
   background: linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,0));
   padding: 64px 0 28px;
@@ -368,13 +529,14 @@ img{max-width:100%;display:block}
   opacity: .85;
 }
 
-/* Tabs */
+/* Tabs de navegación interna (#domingos, #eventos, #comunidad) */
 .gallery-tabs{
   margin-top: 18px;
   display:flex;
   flex-wrap:wrap;
   gap:10px;
 }
+
 .tab{
   display:inline-block;
   padding:.55rem .9rem;
@@ -385,16 +547,17 @@ img{max-width:100%;display:block}
 }
 .tab:hover{background:#fff}
 
-/* Titulitos */
+/* Título de cada bloque de galería */
 .gallery-title{
   margin-bottom: 16px;
 }
+
 .gallery-title p{
   max-width: 820px;
   opacity:.85;
 }
 
-/* Mosaico tipo grid */
+/* Grid de imágenes (mosaico) */
 .mosaic{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -412,27 +575,29 @@ img{max-width:100%;display:block}
   transition: transform .2s ease;
 }
 
+/* Efecto pequeño al pasar el mouse */
 .mosaic img:hover{
   transform: scale(1.02);
 }
 
-/* Variante para que no se vea igual en todas */
+/* Variante para que el mosaico de eventos no se vea igual que el de domingos */
 .mosaic-alt{
   grid-template-columns: 2fr 1fr 1fr 2fr;
 }
 
-/* subtitulo antes del carrusel */
+/* Subtítulo antes de carruseles dentro de galería */
 .subhead{
   margin: 4px 0 12px;
   font-size: 1.15rem;
 }
 
-/* Responsive */
+/* Responsive galería */
 @media (max-width: 1000px){
   .mosaic{grid-template-columns: repeat(2, 1fr);}
   .mosaic-alt{grid-template-columns: repeat(2, 1fr);}
   .mosaic img{height: 190px;}
 }
+
 @media (max-width: 520px){
   .mosaic{grid-template-columns: 1fr;}
   .mosaic img{height: 210px;}
