@@ -1,0 +1,260 @@
+<!-- Oscar Alexander Vilchis Soto Desarrollo Web para Servicio Social 2025 Vía Recreativa Querétaro -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>Descubre | Vía Recreativa Querétaro</title>
+
+  <!-- Estilos generales del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript del sitio (menú, carruseles, etc.) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= MENÚ DE NAVEGACIÓN ================= -->
+<!-- Barra superior con logo y enlaces a las demás páginas -->
+<header class="nav">
+
+  <!-- Logo + nombre del sitio (al dar clic regresa al inicio) -->
+  <a class="brand" href="index.html">
+    <img src="LOGOS/logo-vrq.png" alt="Logo">
+    <span>Vía Recreativa Qro</span>
+  </a>
+
+  <!-- Botón hamburguesa para pantallas pequeñas -->
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+
+  <!-- Enlaces principales de navegación -->
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="descubre.html" class="active">Descubre</a>
+    <a href="galería.html">Galería</a>
+    <a href="actividades.html">Actividades</a>
+  </nav>
+</header>
+
+<!-- ================= INTRO DE LA PÁGINA ================= -->
+<!-- Sección corta que introduce el tema de esta página -->
+<section class="section section-blue">
+  <div class="container">
+    <h2>Descubre la Vía Recreativa Querétaro</h2>
+  </div>
+</section>
+
+<!-- ================= 1) ¿QUÉ ES? (2 COLUMNAS) ================= -->
+<section class="section section-cream">
+  <div class="container two-column">
+
+    <!-- Columna izquierda: texto explicativo -->
+    <div class="text-col">
+      <h2>¿Qué es la Vía Recreativa?</h2>
+      <p>
+        La Vía Recreativa opera actualmente cada domingo de 8:00 a 12:00 horas en el Circuito Cerro de las Campanas,
+        cerca de la Universidad Autónoma de Querétaro. Es un espacio donde las personas pueden andar en bicicleta, patines,
+        caminar o pasear con sus mascotas en calles libres de automóviles.
+      </p>
+      <p>
+        Su objetivo es recuperar el espacio público para las personas, fomentar actividad física
+        y convivencia en comunidad. Actualmente es impulsada por alrededor de 30 colectivos y proyectos ciudadanos.
+      </p>
+    </div>
+
+    <!-- Columna derecha: carrusel pequeño con fotos  -->
+    <div class="media-col">
+      <div class="carousel carousel-mini" data-autoplay="true" data-interval="3500" aria-label="Carrusel qué es">
+
+        <div class="carousel-track">
+          <div class="slide"><img src="IMG/img (45).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (42).JPG" alt="Foto"></div>
+          <div class="slide"><img src="IMG/img (40).JPG" alt="Foto"></div>
+        </div>
+
+        <!-- Botones para cambiar imágenes manualmente -->
+        <button class="carousel-prev" aria-label="Anterior">‹</button>
+        <button class="carousel-next" aria-label="Siguiente">›</button>
+
+        <!-- Puntitos para indicadores del carrusel -->
+        <div class="carousel-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 2) HISTORIA / CONTEXTO (2 COLUMNAS) ================= -->
+<!-- Timeline con eventos (izquierda) + carrusel de apoyo (derecha) -->
+<section class="section section-cream">
+  <div class="container two-column">
+
+    <!-- Columna izquierda: texto y línea del tiempo -->
+    <div class="text-col">
+      <h2>Historia y evolución de la Vía Recreativa Querétaro</h2>
+
+      <!-- Línea del tiempo (cada bloque representa una etapa) -->
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="t-item">
+          <h3>2010 - Nace BICIVIA</h3>
+          <p>
+            El programa fue impulsado por el Instituto Municipal de Planeación (IMPLAN),
+            estableciendo los cimientos de lo que se convertiría en uno de los 5 mejores circuitos recreativos de América Latina,
+            esto de acuerdo con la Red de Ciclovías Recreativas de las Americas (CRA) en el 2012.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="t-item">
+          <h3>2010-2019</h3>
+          <p>
+            Durante estos años, la Vía Recreativa llegó a reunir hasta 22,000 asistentes cada domingo,
+            conectando distintos puntos de la ciudad..
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="t-item">
+          <h3>2023</h3>
+          <p>
+            Más de 15 organizaciones ciudadanas denunciaron abandono institucional del municipio,
+            señalando que el programa fue reubicado al Cerro de las Campanas en vez de los grandes circuitos que conectaban la ciudad.
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="t-item">
+          <h3>2024</h3>
+          <p>
+            Tras casi 5 meses de pausa, colectivos ciudadanos organizaron de manera autónoma la reactivación del programa,
+            demostrando el poder de la organización comunitaria.
+          </p>
+        </div>
+      </div>
+
+      <!-- Fuentes  -->
+      <p class="small-note">
+        Fuentes:
+        <br><br>
+
+        <i>Redacción El Queretano. (2025, 16 julio). Colectivos acusan abandono municipal a la Vía Recreativa de Querétaro. EL QUERETANO.</i>
+        <br>
+        <a href="https://elqueretano.info/urbanismo/colectivos-acusan-abandono-municipal-a-la-via-recreativa-de-queretaro/">
+          <strong><u>https://elqueretano.info/urbanismo/colectivos-acusan-abandono-municipal-a-la-via-recreativa-de-queretaro/</u></strong>
+        </a>
+
+        <br><br>
+
+        <i>Molina, S., & Andrade-Ochoa, S. (2025, 12 noviembre). Vía recreativa en Querétaro: voluntad ciudadana supera al abandono institucional. Animal Político.</i>
+        <br>
+        <a href="https://animalpolitico.com/analisis/invitades/via-recreativa-queretaro-apoyo-ciudadano">
+          <strong><u>https://animalpolitico.com/analisis/invitades/via-recreativa-queretaro-apoyo-ciudadano</u></strong>
+        </a>
+      </p>
+    </div>
+
+    <!-- Columna derecha: carrusel pequeño con imágenes relacionadas -->
+    <div class="media-col">
+      <div class="carousel carousel-mini" data-autoplay="true" data-interval="3800" aria-label="Carrusel historia">
+        <div class="carousel-track">
+          <div class="slide"><img src="IMG/img (21).JPG" alt="Ruta y participantes"></div>
+          <div class="slide"><img src="IMG/img (24).JPG" alt="Actividades comunitarias"></div>
+          <div class="slide"><img src="IMG/img (13).JPG" alt="Dinámicas en la vía"></div>
+        </div>
+        <button class="carousel-prev" aria-label="Anterior">‹</button>
+        <button class="carousel-next" aria-label="Siguiente">›</button>
+        <div class="carousel-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 3) ¿QUÉ HAY ACTUALMENTE? (2 COLUMNAS) ================= -->
+<section class="section section-cream">
+  <div class="container two-column">
+
+    <!-- Columna izquierda: texto sobre el estado actual -->
+    <div class="text-col">
+      <h2>¿Qué hay actualmente?</h2>
+      <p>
+        Actualmente, la Vía Recreativa opera cada domingo gracias al esfuerzo conjunto de la ciudadanía organizada.
+        Es un espacio que ha logrado mantenerse vivo por la pasión y compromiso de quienes creen en su importancia para la comunidad queretana.
+      </p>
+      <p>
+        Incluye préstamo de bicicletas, carpas y stands informativos, talleres comunitarios, actividades físicas y espacios de convivencia familiar.
+        Mantiene su esencia como punto de encuentro para familias, deportistas y amantes de la movilidad sustentable.
+      </p>
+    </div>
+
+    <!-- Columna derecha: carrusel mini sobre actividades actuales -->
+    <div class="media-col">
+      <div class="carousel carousel-mini" data-autoplay="true" data-interval="3600" aria-label="Carrusel actualidad">
+        <div class="carousel-track">
+          <div class="slide"><img src="IMG/img (34).JPG" alt="Carpas y stands"></div>
+          <div class="slide"><img src="IMG/img (38).JPG" alt="Actividades y comunidad"></div>
+          <div class="slide"><img src="IMG/img (39).JPG" alt="Bicis en circuito"></div>
+        </div>
+        <button class="carousel-prev" aria-label="Anterior">‹</button>
+        <button class="carousel-next" aria-label="Siguiente">›</button>
+        <div class="carousel-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CARRUSEL GRANDE FINAL ================= -->
+<!-- Carrusel principal de cierre  -->
+<section class="section section-cream">
+  <div class="container">
+    <h2>Participa en la Vía Recreativa</h2>
+
+    <div class="carousel" data-autoplay="true" data-interval="4000" aria-label="Carrusel participa">
+      <div class="carousel-track">
+        <div class="slide"><img src="IMG/img (75).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (68).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (65).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (62).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (41).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (47).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (51).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (56).JPG" alt="Foto"></div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<!-- Pie de página con info y redes oficiales -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Vía Recreativa Querétaro</h3>
+      <p>Domingos 8:00–12:00 h · Cerro de las Campanas</p>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="social">
+      <a href="https://www.instagram.com/viarecreativaqro/" target="_blank">Instagram Vía Recreativa</a>
+      <a href="https://www.facebook.com/profile.php?id=61569045212847" target="_blank">Facebook Vía Recreativa</a>
+      <a href="https://www.tiktok.com/@via_recreativa_queretaro?is_from_webapp=1&sender_device=pc" target="_blank">TikTok Vía Recreativa</a>
+    </div>
+  </div>
+
+   <div class="legal">© 2025 Vía Recreativa Qro</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!-- Oscar Alexander Vilchis Soto Desarrollo Web para Servicio Social 2025 Vía Recreativa Querétaro -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título de la pestaña -->
+  <title>Acerca de | Vía Recreativa Querétaro</title>
+
+  <!-- Estilos generales del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Funcionalidades JavaScript (menú, carruseles, etc.) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= MENÚ DE NAVEGACIÓN ================= -->
+<!-- Barra superior con logo y enlaces -->
+<header class="nav">
+
+  <!-- Logo y nombre del proyecto -->
+  <a class="brand" href="index.html">
+    <img src="LOGOS/logo-vrq.png" alt="Logo">
+    <span>Vía Recreativa Qro</span>
+  </a>
+
+  <!-- Botón hamburguesa para móviles -->
+  <button class="nav-toggle">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Enlaces principales -->
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html" class="active">Acerca de</a>
+    <a href="descubre.html">Descubre</a>
+    <a href="galería.html" class="active">Galería</a>
+    <a href="actividades.html">Actividades</a>
+  </nav>
+</header>
+
+<!-- ================= INTRODUCCIÓN ================= -->
+<!-- Sección inicial con explicación breve del proyecto -->
+<section class="section section-blue">
+  <div class="container">
+    <h2>Descubre la Vía Recreativa Querétaro</h2>
+    <p>
+      Espacio público temporal abierto los domingos de <strong>8:00 a 12:00 h</strong> en el
+      <strong>Circuito Cerro de las Campanas</strong>, donde puedes caminar, correr, andar en bici o
+      participar en actividades culturales y comunitarias.
+    </p>
+  </div>
+</section>
+
+<!-- ================= INFORMACIÓN PRINCIPAL ================= -->
+<!-- Sección dividida en dos columnas: texto + mini carrusel -->
+<section class="section section-cream">
+  <div class="container two-column">
+
+    <!-- Columna izquierda: información explicativa -->
+    <div class="text-col">
+      <h2>¿Qué son las vías recreativas?</h2>
+      <p>
+        Las vías recreativas (o ciclovías recreativas, “open streets”) son calles que uno o más días a la semana,
+        generalmente los domingos o días festivos, se cierran temporalmente al tránsito motorizado
+        para convertirse en espacios destinados al paseo, el ejercicio y la convivencia.
+      </p>
+      <p>
+        Durante esas horas, los ciudadanos pueden caminar, andar en bicicleta, patinar o simplemente disfrutar
+        del espacio público sin el riesgo del tráfico vehicular. El objetivo es fomentar estilos de vida activos,
+        fortalecer la convivencia social y reactivar el comercio local.
+      </p>
+      <p>
+        Estas iniciativas promueven la inclusión social, integran a personas de todas las edades y capacidades,
+        y fortalecen la cultura del uso del espacio público.
+      </p>
+    </div>
+
+    <!-- Columna derecha: mini carrusel de imágenes -->
+    <!-- Ideal para mostrar ambiente y actividades -->
+    <div class="mini-carousel" data-autoplay="true" data-interval="3000">
+      <div class="mini-track">
+        <div class="mini-slide"><img src="IMG/img (2).JPG" alt="Vía recreativa 1"></div>
+        <div class="mini-slide"><img src="IMG/img (1).JPG" alt="Vía recreativa 2"></div>
+        <div class="mini-slide"><img src="IMG/img (8).JPG" alt="Vía recreativa 3"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= UBICACIÓN Y ACTIVIDADES ================= -->
+<!-- Sección con mapa y segundo mini carrusel -->
+<section class="section section-cream">
+  <div class="container map-layout">
+
+    <!-- Columna izquierda: mapa de Google Maps -->
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.869345871301!2d-100.4080129!3d20.5930717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b002e7e715d%3A0xce89f4ab8905364e!2sV%C3%ADa%20Recreativa%20Quer%C3%A9taro%20-%20Cerro%20de%20las%20Campanas!5e1!3m2!1ses-419!2smx!4v1764126819091!5m2!1ses-419!2smx"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Columna derecha: mini carrusel de actividades -->
+    <div class="mini-carousel" data-autoplay="true" data-interval="3500">
+      <div class="mini-track">
+        <div class="mini-slide"><img src="IMG/img (10).JPG" alt="Rodada familiar"></div>
+        <div class="mini-slide"><img src="IMG/img (13).JPG" alt="Personas caminando"></div>
+        <div class="mini-slide"><img src="IMG/img (16).JPG" alt="Niños en bici"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CARRUSEL PRINCIPAL ================= -->
+<!-- Galería amplia con imágenes representativas -->
+<section class="section section-cream">
+  <div class="container">
+    <h2>Vive tu ciudad</h2>
+
+    <div class="carousel" data-autoplay="true" data-interval="4000" aria-label="Carrusel acerca">
+      <div class="carousel-track">
+        <div class="slide"><img src="IMG/img (36).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (17).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (19).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (23).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (27).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (29).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (32).JPG" alt="Foto"></div>
+        <div class="slide"><img src="IMG/img (31).JPG" alt="Foto"></div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<!-- Información final y redes sociales -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- Información general -->
+    <div>
+      <h3>Vía Recreativa Querétaro</h3>
+      <p>Domingos 8:00–12:00 h · Cerro de las Campanas</p>
+    </div>
+
+    <!-- Redes sociales oficiales -->
+    <div class="social">
+      <a href="https://www.instagram.com/viarecreativaqro/" target="_blank">Instagram Vía Recreativa</a>
+      <a href="https://www.facebook.com/profile.php?id=61569045212847" target="_blank">Facebook Vía Recreativa</a>
+      <a href="https://www.tiktok.com/@via_recreativa_queretaro?is_from_webapp=1&sender_device=pc" target="_blank">TikTok Vía Recreativa</a>
+    </div>
+  </div>
+
+  <div class="legal">© 2025 Vía Recreativa Qro</div>
+</footer>
+
+</body>
+</html>

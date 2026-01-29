@@ -1,0 +1,214 @@
+<!-- Oscar Alexander Vilchis Soto Desarrollo Web para Servicio Social 2025 Vía Recreativa Querétaro -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título que aparece en la pestaña -->
+  <title>Galería | Vía Recreativa Querétaro</title>
+
+  <!-- Estilos generales del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript del sitio (menú, carruseles, etc.) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ================= MENÚ DE NAVEGACIÓN ================= -->
+<!-- Barra superior con logo y enlaces -->
+<header class="nav">
+  <a class="brand" href="index.html">
+    <img src="LOGOS/logo-vrq.png" alt="">
+    <span>Vía Recreativa Qro</span>
+  </a>
+
+  <!-- Botón hamburguesa para móviles -->
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+
+  <!-- Links principales -->
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="descubre.html">Descubre</a>
+    <a href="galería.html" class="active">Galería</a>
+    <a href="actividades.html">Actividades</a>
+  </nav>
+</header>
+
+<!-- ================= HERO CHIQUITO ================= -->
+<!-- Encabezado de la galería y navegación interna por secciones -->
+<section class="gallery-hero">
+  <div class="container">
+    <h1>Galería</h1>
+    <p>Momentos, eventos y personas que hacen posible la Vía Recreativa Querétaro.</p>
+
+    <div class="gallery-tabs">
+      <a class="tab" href="#domingos">Domingos en la Vía</a>
+      <a class="tab" href="#eventos">Eventos especiales</a>
+      <a class="tab" href="#comunidad">Comunidad y voluntariado</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1) DOMINGOS ================= -->
+<!-- Sección con mosaico de fotos y carrusel de destacadas -->
+<section class="section section-cream" id="domingos">
+  <div class="container">
+
+    <!-- Título y descripción de la sección -->
+    <div class="gallery-title">
+      <h2>Domingos en la Vía</h2>
+      <p>Fotos tomadas cada domingo: bici, caminata, familias, mascotas y convivencia.</p>
+    </div>
+
+    <!-- MOSAICO -->
+    <div class="mosaic">
+      <img src="IMG/img (1).JPG" alt="Domingo 1">
+      <img src="IMG/img (15).JPG" alt="Domingo 2">
+      <img src="IMG/img (16).JPG" alt="Domingo 3">
+      <img src="IMG/img (17).JPG" alt="Domingo 4">
+      <img src="IMG/img (21).JPG" alt="Domingo 5">
+      <img src="IMG/img (32).JPG" alt="Domingo 6">
+      <img src="IMG/img (38).JPG" alt="Domingo 7">
+      <img src="IMG/img (41).JPG" alt="Domingo 8">
+    </div>
+
+    <!-- CARRUSEL DESTACADAS -->
+    <!-- Carrusel para fotos  -->
+    <h3 class="subhead">Destacadas</h3>
+    <div class="carousel" data-autoplay="true" data-interval="3500" aria-label="Carrusel domingos">
+
+      <!-- Track que se mueve -->
+      <div class="carousel-track">
+        <div class="slide"><img src="IMG/img (25).JPG" alt="Destacada 1"></div>
+        <div class="slide"><img src="IMG/img (41).JPG" alt="Destacada 2"></div>
+        <div class="slide"><img src="IMG/img (50).JPG" alt="Destacada 3"></div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2) EVENTOS ================= -->
+<!-- Fotos de eventos especiales y carrusel de momentos -->
+<section class="section section-cream" id="eventos">
+  <div class="container">
+
+    <!-- Título y descripción -->
+    <div class="gallery-title">
+      <h2>Eventos especiales</h2>
+      <p>Aniversarios, festivales, activaciones y días con programación especial.</p>
+    </div>
+
+    <!-- MOSAICO (versión alternativa) -->
+    <!-- mosaic-alt puede cambiar el estilo del grid (tamaños/orden) -->
+    <div class="mosaic mosaic-alt">
+      <img src="IMG/img (12).JPG" alt="Evento 1">
+      <img src="IMG/img (90).JPG" alt="Evento 2">
+      <img src="IMG/img (98).JPG" alt="Evento 3">
+      <img src="IMG/img (5).JPG" alt="Evento 4">
+      <img src="IMG/img (6).JPG" alt="Evento 5">
+      <img src="IMG/img (87).JPG" alt="Evento 6">
+      <img src="IMG/img (78).JPG" alt="Evento 7">
+      <img src="IMG/img (11).JPG" alt="Evento 8">
+    </div>
+
+    <!-- Carrusel para momentos del evento -->
+    <h3 class="subhead">Momentos del evento</h3>
+    <div class="carousel" data-autoplay="true" data-interval="4000" aria-label="Carrusel eventos">
+      <div class="carousel-track">
+        <div class="slide"><img src="IMG/img (77).JPG" alt="Evento destacada 1"></div>
+        <div class="slide"><img src="IMG/img (79).JPG" alt="Evento destacada 2"></div>
+        <div class="slide"><img src="IMG/img (94).JPG" alt="Evento destacada 3"></div>
+        <div class="slide"><img src="IMG/img (96).JPG" alt="Evento destacada 4"></div>
+        <div class="slide"><img src="IMG/img (10).JPG" alt="Evento destacada 5"></div>
+        <div class="slide"><img src="IMG/img (4).JPG" alt="Evento destacada 6"></div>
+      </div>
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3) COMUNIDAD ================= -->
+<!-- Fotos de voluntariado y participación ciudadana y carrusel -->
+<section class="section section-cream" id="comunidad">
+  <div class="container">
+
+    <!-- Título y descripción -->
+    <div class="gallery-title">
+      <h2>Comunidad y voluntariado</h2>
+      <p>Personas, grupos, servicio social y quienes hacen posible que la Vía sea segura y viva.</p>
+    </div>
+
+    <!-- MOSAICO -->
+    <div class="mosaic">
+      <img src="IMG/img (7).JPG" alt="Voluntariado 1">
+      <img src="IMG/img (2).jpeg" alt="Voluntariado 2">
+      <img src="IMG/img (3).jpeg" alt="Voluntariado 3">
+      <img src="IMG/img (24).JPG" alt="Voluntariado 4">
+      <img src="IMG/img (33).JPG" alt="Comunidad 1">
+      <img src="IMG/img (44).JPG" alt="Comunidad 2">
+      <img src="IMG/img (109).JPG" alt="Comunidad 3">
+      <img src="IMG/img (108).JPG" alt="Comunidad 4">
+      <img src="IMG/img (115).JPG" alt="Comunidad 5">
+      <img src="IMG/img (104).JPG" alt="Comunidad 6">
+      <img src="IMG/img (100).JPG" alt="Comunidad 7">
+      <img src="IMG/img (97).JPG" alt="Comunidad 8">
+      <img src="IMG/img (101).JPG" alt="Comunidad 9">
+      <img src="IMG/img (110).JPG" alt="Comunidad 10">
+      <img src="IMG/img (112).JPG" alt="Comunidad 11">
+      <img src="IMG/img (113).JPG" alt="Comunidad 12">
+    </div>
+
+    <!-- Carrusel con fotos  -->
+    <h3 class="subhead">Detrás de la Vía</h3>
+    <div class="carousel" data-autoplay="true" data-interval="4200" aria-label="Carrusel comunidad">
+      <div class="carousel-track">
+        <div class="slide"><img src="IMG/img (117).jpg" alt="Comunidad destacada 1"></div>
+        <div class="slide"><img src="IMG/img (116).jpg" alt="Comunidad destacada 2"></div>
+        <div class="slide"><img src="IMG/img (118).jpg" alt="Comunidad destacada 3"></div>
+        <div class="slide"><img src="IMG/img (105).jpg" alt="Comunidad destacada 4"></div>
+        <div class="slide"><img src="IMG/img (52).jpg" alt="Comunidad destacada 5"></div>
+        <div class="slide"><img src="IMG/img (102).jpg" alt="Comunidad destacada 6"></div>
+        <div class="slide"><img src="IMG/img (95).jpg" alt="Comunidad destacada 7"></div>
+        <div class="slide"><img src="IMG/img (76).jpg" alt="Comunidad destacada 8"></div>
+      </div>
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<!-- Información final y redes sociales -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Vía Recreativa Querétaro</h3>
+      <p>Domingos 8:00–12:00 h · Cerro de las Campanas</p>
+    </div>
+
+    <!-- Redes oficiales -->
+    <div class="social">
+      <a href="https://www.instagram.com/viarecreativaqro/" target="_blank">Instagram Vía Recreativa</a>
+      <a href="https://www.facebook.com/profile.php?id=61569045212847" target="_blank">Facebook Vía Recreativa</a>
+      <a href="https://www.tiktok.com/@via_recreativa_queretaro?is_from_webapp=1&sender_device=pc" target="_blank">TikTok Vía Recreativa</a>
+    </div>
+  </div>
+
+  <div class="legal">© 2025 Vía Recreativa Qro</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Vía Recreativa Querétaro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">
+    <img src="logo-vrq.jpg" alt="">
+    <span>Vía Recreativa Qro</span>
+  </a>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="descubre.html">Descubre</a>
+    <a href="galería.html" class="active">Galería</a>
+    <a href="actividades.html">Actividades</a>
+  </nav>
+</header>
+
+<!-- HERO CHIQUITO -->
+<section class="gallery-hero">
+  <div class="container">
+    <h1>Galería</h1>
+    <p>Momentos, eventos y personas que hacen posible la Vía Recreativa Querétaro.</p>
+
+    <div class="gallery-tabs">
+      <a class="tab" href="#domingos">Domingos en la Vía</a>
+      <a class="tab" href="#eventos">Eventos especiales</a>
+      <a class="tab" href="#comunidad">Comunidad y voluntariado</a>
+    </div>
+  </div>
+</section>
+
+<!-- 1) DOMINGOS -->
+<section class="section section-cream" id="domingos">
+  <div class="container">
+    <div class="gallery-title">
+      <h2>Domingos en la Vía</h2>
+      <p>Fotos tomadas cada domingo: bici, caminata, familias, mascotas y convivencia.</p>
+    </div>
+
+    <!-- MOSAICO -->
+    <div class="mosaic">
+      <img src="img/2.JPG" alt="Domingo 1">
+      <img src="img/3.jpg" alt="Domingo 2">
+      <img src="img/4.jpg" alt="Domingo 3">
+      <img src="img/6.jpg" alt="Domingo 4">
+      <img src="img/7.JPG" alt="Domingo 5">
+      <img src="img/8.JPG" alt="Domingo 6">
+      <img src="img/9.JPG" alt="Domingo 7">
+      <img src="img/11.JPG" alt="Domingo 8">
+    </div>
+
+    <!-- CARRUSEL DESTACADAS -->
+    <h3 class="subhead">Destacadas</h3>
+    <div class="carousel" data-autoplay="true" data-interval="3500" aria-label="Carrusel domingos">
+      <div class="carousel-track">
+        <div class="slide"><img src="img/2.JPG" alt="Destacada 1"></div>
+        <div class="slide"><img src="img/3.jpg" alt="Destacada 2"></div>
+        <div class="slide"><img src="img/4.jpg" alt="Destacada 3"></div>
+      </div>
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2) EVENTOS -->
+<section class="section section-cream" id="eventos">
+  <div class="container">
+    <div class="gallery-title">
+      <h2>Eventos especiales</h2>
+      <p>Aniversarios, festivales, activaciones y días con programación especial.</p>
+    </div>
+
+    <div class="mosaic mosaic-alt">
+      <img src="img  (1).JPG" alt="Evento 1">
+      <img src="img  (2).JPG" alt="Evento 2">
+      <img src="img  (10).JPG" alt="Evento 3">
+      <img src="img  (4).JPG" alt="Evento 4">
+      <img src="img  (9).JPG" alt="Evento 5">
+      <img src="img  (6).JPG" alt="Evento 6">
+    </div>
+
+    <h3 class="subhead">Momentos del evento</h3>
+    <div class="carousel" data-autoplay="true" data-interval="4000" aria-label="Carrusel eventos">
+      <div class="carousel-track">
+        <div class="slide"><img src="img/evento1.jpg" alt="Evento destacada 1"></div>
+        <div class="slide"><img src="img/evento2.jpg" alt="Evento destacada 2"></div>
+        <div class="slide"><img src="img/evento3.jpg" alt="Evento destacada 3"></div>
+      </div>
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3) COMUNIDAD -->
+<section class="section section-cream" id="comunidad">
+  <div class="container">
+    <div class="gallery-title">
+      <h2>Comunidad y voluntariado</h2>
+      <p>Personas, grupos, servicio social y quienes hacen posible que la Vía sea segura y viva.</p>
+    </div>
+
+    <div class="mosaic">
+      <img src="img/vol1.jpg" alt="Voluntariado 1">
+      <img src="img/vol2.jpg" alt="Voluntariado 2">
+      <img src="img/vol3.jpg" alt="Voluntariado 3">
+      <img src="img/vol4.jpg" alt="Voluntariado 4">
+      <img src="img/comu1.jpg" alt="Comunidad 1">
+      <img src="img/comu2.jpg" alt="Comunidad 2">
+    </div>
+
+    <h3 class="subhead">Detrás de la Vía</h3>
+    <div class="carousel" data-autoplay="true" data-interval="4200" aria-label="Carrusel comunidad">
+      <div class="carousel-track">
+        <div class="slide"><img src="img/vol1.jpg" alt="Comunidad destacada 1"></div>
+        <div class="slide"><img src="img/vol2.jpg" alt="Comunidad destacada 2"></div>
+        <div class="slide"><img src="img/vol3.jpg" alt="Comunidad destacada 3"></div>
+      </div>
+      <button class="carousel-prev" aria-label="Anterior">‹</button>
+      <button class="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Vía Recreativa Querétaro</h3>
+        <p>Domingos 8:00–12:00 h · Cerro de las Campanas</p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/viarecreativaqro/" target="_blank">Instagram Vía Recreativa</a>
+        <a href="https://www.facebook.com/profile.php?id=61569045212847" target="_blank">Facebook Vía Recreativa</a>
+        <a href="https://www.tiktok.com/@via_recreativa_queretaro?is_from_webapp=1&sender_device=pc" target="_blank">TikTok Vía Recreativa</a>
+      </div>
+    </div>
+    <div class="legal">© 2025 Vía Recreativa Qro</div>
+  </footer>
+
+</body>
+</html>
